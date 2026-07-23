@@ -6,7 +6,7 @@
 # Platform    HackerRank
 # Language    pypy3
 # Status      Accepted
-# Submitted   2026-07-23, 05:18 p.m.
+# Submitted   2026-07-23, 05:19 p.m.
 # ──────────────────────────────────────────────────
 
 def swap_case(s):
