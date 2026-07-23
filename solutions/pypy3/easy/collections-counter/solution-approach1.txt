@@ -1,0 +1,36 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/collections-counter/problem?isFullScreen=true
+# Problem     collections.Counter()
+# Difficulty  Easy
+# Subdomain   Collections
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-23, 05:09 p.m.
+# ──────────────────────────────────────────────────
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+
+# Number of shoes
+X = int(input())
+
+# Shoe sizes in the shop
+shoe_sizes = list(map(int, input().split()))
+
+# Count available shoes
+inventory = Counter(shoe_sizes)
+
+# Number of customers
+N = int(input())
+
+earnings = 0
+
+for _ in range(N):
+    size, price = map(int, input().split())
+
+    if inventory[size] > 0:
+        earnings += price
+        inventory[size] -= 1
+
+print(earnings)
