@@ -1,0 +1,25 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/re-findall-re-finditer/problem?isFullScreen=true
+# Problem     Re.findall() & Re.finditer()
+# Difficulty  Easy
+# Subdomain   Regex and Parsing
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-23, 05:17 p.m.
+# ──────────────────────────────────────────────────
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+s = input()
+
+pattern = r'(?<=[QWRTYPSDFGHJKLZXCVBNMqwrtpsdfghjklzxcvbnm])[AEIOUaeiou]{2,}(?=[QWRTYPSDFGHJKLZXCVBNMqwrtpsdfghjklzxcvbnm])'
+
+matches = re.findall(pattern, s)
+
+if matches:
+    for match in matches:
+        print(match)
+else:
+    print(-1)
