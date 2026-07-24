@@ -6,7 +6,7 @@
 # Platform    HackerRank
 # Language    pypy3
 # Status      Accepted
-# Submitted   2026-07-23, 05:34 p.m.
+# Submitted   2026-07-24, 05:58 p.m.
 # ──────────────────────────────────────────────────
 
 def count_substring(string, sub_string):
